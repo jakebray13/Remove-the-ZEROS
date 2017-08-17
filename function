@@ -1,0 +1,14 @@
+function removeZero(num) {
+  var stringified = num + '';
+  var zeroLess = '';
+  for (var i=0; i<stringified.length; i++) {
+    if (stringified[i] !== "0") {
+      zeroLess += stringified[i];
+    }
+  }
+  if (!zeroLess) {
+    return NaN;
+  } else {
+    return zeroLess;
+    }
+}
